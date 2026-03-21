@@ -2,7 +2,7 @@
 
 
 
-!\[Laclede's LAN Team Fortress 2 Classified Dedicated Freeplay Server](https://raw.githubusercontent.com/LacledesLAN/gamesvr-tf2classified-freeplay/refs/heads/main/.misc/banner-tf2-classified-freeplay.jpg "Laclede's LAN Team Fortress 2 Classified Dedicated Freeplay Server")
+![Laclede's LAN Team Fortress 2 Classified Dedicated Freeplay Server](https://raw.githubusercontent.com/LacledesLAN/gamesvr-tf2classified-freeplay/refs/heads/main/.misc/banner-tf2-classified-freeplay.jpg "Laclede's LAN Team Fortress 2 Classified Dedicated Freeplay Server")
 
 
 
