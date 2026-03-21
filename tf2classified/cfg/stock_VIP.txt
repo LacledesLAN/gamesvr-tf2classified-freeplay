@@ -1,0 +1,8 @@
+vip_avanti
+vip_badwater
+vip_harbor
+vip_mineside
+vip_trainyard
+vipr_2bridge
+vipr_chopper
+vipr_drizzle

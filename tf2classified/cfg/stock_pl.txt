@@ -1,0 +1,8 @@
+pl_badwater
+pl_barnblitz
+pl_frontier_final
+pl_goldrush
+pl_hoodoo_final
+pl_jinn
+pl_thundermountain
+pl_upward
