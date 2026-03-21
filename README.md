@@ -10,7 +10,7 @@ This repository is maintained by \[Laclede's LAN](https://lacledeslan.com). Its 
 
 for use at our charity LAN-Parties. For third-parties we recommend using this repo only as a reference example and then
 
-building your own using \[gamesvr-tf2](https://github.com/LacledesLAN/gamesvr-tf2) as the base image for your customized
+building your own using \[gamesvr-tf2-classified](https://github.com/LacledesLAN/gamesvr-tf2-classified) as the base image for your customized
 
 server.
 
