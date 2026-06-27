@@ -17,9 +17,11 @@ RUN if [ "$contentServer" = false ] ; then \
                 mv --no-clobber *.bsp /output/tf2classified/tf2classified/maps/; \
     fi;
 
-COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
+##SM/MM not currently compatible
+##COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
 
-COPY ./dist/sourcemod-configs /output/tf2classified/tf2classified/
+##SM/MM not currently compatible
+##COPY ./dist/sourcemod-configs /output/tf2classified/tf2classified/
 
 COPY ./dist/linux-x64/ll-tests /output/tf2classified/ll-tests/
 
