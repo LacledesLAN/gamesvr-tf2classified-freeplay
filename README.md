@@ -21,13 +21,13 @@ The image includes a test script that can be used to verify its contents. No cha
 to this repository if any tests fail.
 
 ```shell
-docker run -it --rm lacledeslan/gamesvr-tf2-classified-freeplay ./ll-tests/gamesvr-tf2-classified-freeplay.sh;
+docker run -it --rm lacledeslan/gamesvr-tf2classified-freeplay ./ll-tests/gamesvr-tf2-classified-freeplay.sh;
 ```
 
 ## Run simple interactive server
 
 ```shell
-docker run -it --rm --net=host lacledeslan/gamesvr-tf2-classified-freeplay ./srcds.sh -game tf +sv_lan 1 +mapcyclefile mapcycle_LL_all.txt +randommap
+docker run -it --rm --net=host lacledeslan/gamesvr-tf2classified-freeplay ./srcds.sh -game tf +sv_lan 1 +mapcyclefile mapcycle_LL_all.txt +randommap
 ```
 
 ## Getting Started with Game Servers in Docker
