@@ -1,0 +1,21 @@
+name: Update Docker Hub Description
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Update Docker HUB Description
+        uses: peter-evans/dockerhub-description@v5
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: lacledeslan/gamesvr-tf2classified-freeplay
+          short-description: "LL Team Fortress 2 Classified Dedicated Freeplay Server in Docker"
+          readme-filepath: ./README.md
