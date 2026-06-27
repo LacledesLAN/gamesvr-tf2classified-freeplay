@@ -1,0 +1,11 @@
+ctf_2fort
+ctf_doublecross
+ctf_landfall
+ctf_pelican_peak
+ctf_penguin_peak
+ctf_sawmill
+ctf_turbine
+ctf_well
+ctf_4bine_v2
+ctf_4fort_final
+ctf_quadruplecross

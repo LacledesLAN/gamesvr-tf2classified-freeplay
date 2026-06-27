@@ -1,0 +1,15 @@
+4arena_flask
+4arena_floodgate
+4dom_krepost
+4dom_hydro
+4koth_frigid
+4plr_sisyphus
+4_team_balloon_race_a4_fix
+4ctf_granary_rc1
+4dom_steamwork
+4koth_badlands_b2
+4koth_hightower_rc3
+4koth_pipeline_rc1
+4koth_target_v2
+wacky_races_4team_b2
+
