@@ -13,8 +13,8 @@ RUN if [ "$contentServer" = false ] ; then \
             echo "Decompressing files" &&\
                 bzip2 --decompress /tmp/maps/*.bz2 &&\
             echo "Moving uncompressed files to destination" &&\
-                mkdir --parents /output/tf2classified/maps/ &&\
-                mv --no-clobber *.bsp /output/tf2classified/maps/; \
+                mkdir --parents /output/tf2classified/tf2classified/maps/ &&\
+                mv --no-clobber *.bsp /output/tf2classified/tf2classified/maps/; \
     fi;
 
 COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
