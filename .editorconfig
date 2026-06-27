@@ -17,3 +17,6 @@ indent_style = tab
 
 [*.y*ml]
 indent_size = 2
+
+[motd.txt]
+insert_final_newline = false
