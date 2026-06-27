@@ -23,6 +23,8 @@ COPY ./dist/sourcemod.linux /output/tf2classified/
 
 COPY ./dist/sourcemod-configs /output/tf2classified/
 
+COPY ./dist/ll-tests /output/tf2classified/ll-tests/
+
 COPY ./dist/tf2classified /output/tf2classified/
 
 FROM lacledeslan/gamesvr-tf2classified
