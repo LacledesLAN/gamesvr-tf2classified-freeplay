@@ -13,17 +13,17 @@ RUN if [ "$contentServer" = false ] ; then \
             echo "Decompressing files" &&\
                 bzip2 --decompress /tmp/maps/*.bz2 &&\
             echo "Moving uncompressed files to destination" &&\
-                mkdir --parents /output/tf/maps/ &&\
-                mv --no-clobber *.bsp /output/tf/maps/; \
+                mkdir --parents /output/tf2classified/maps/ &&\
+                mv --no-clobber *.bsp /output/tf2classified/maps/; \
     fi;
 
-COPY ./dist/sourcemod.linux /output/tf2classified/
+COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
 
-COPY ./dist/sourcemod-configs /output/tf2classified/
+COPY ./dist/sourcemod-configs /output/tf2classified/tf2classified/
 
 COPY ./dist/linux-x64/ll-tests /output/tf2classified/ll-tests/
 
-COPY ./dist/tf2classified /output/tf2classified/
+COPY ./dist/tf2classified /output/tf2classified/tf2classified/
 
 FROM lacledeslan/gamesvr-tf2classified
 
@@ -46,6 +46,7 @@ COPY --chown=TF2classified:root --from=content-assembler /output /app
 # UPDATE USERNAME & ensure permissions
 
 RUN usermod -l TF2classifiedFreeplay TF2classified &&\
+    usermod -d /app/tf2classified/ TF2classifiedFreeplay &&\
     chmod +x /app/tf2classified/ll-tests/*.sh;
 
 USER TF2classifiedFreeplay
