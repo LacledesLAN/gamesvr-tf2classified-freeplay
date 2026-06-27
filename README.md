@@ -27,7 +27,7 @@ docker run -it --rm lacledeslan/gamesvr-tf2-classified-freeplay ./ll-tests/games
 ## Run simple interactive server
 
 ```shell
-docker run -it --rm --net=host lacledeslan/gamesvr-tf2-freeplay-classified ./srcds\_run\_64 -game tf +sv\_lan 1 +mapcyclefile mapcycle\_LL\_all.txt +randommap
+docker run -it --rm --net=host lacledeslan/gamesvr-tf2-classified-freeplay ./srcds.sh -game tf +sv_lan 1 +mapcyclefile mapcycle_LL_all.txt +randommap
 ```
 
 ## Getting Started with Game Servers in Docker
