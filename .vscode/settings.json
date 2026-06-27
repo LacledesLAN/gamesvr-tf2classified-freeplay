@@ -18,6 +18,7 @@
         "files.eol": "\n"
     },
     "cSpell.words": [
+        "BUILDNODE",
         "dockerhub",
         "Dockerized",
         "freeplay",
@@ -28,6 +29,6 @@
         "randommap",
         "sourcemod",
         "srcds",
-        "usermod"
+        "usermod",
     ]
 }

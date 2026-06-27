@@ -19,13 +19,13 @@ RUN if [ "$contentServer" = false ] ; then `
                 mv --no-clobber *.bsp /output/tf/maps/; `
     fi;
 
-COPY ./sourcemod.linux /output/tf2classified/
+COPY ./dist/sourcemod.linux /output/tf2classified/
 
-COPY ./sourcemod-configs /output/tf2classified/
+COPY ./dist/sourcemod-configs /output/tf2classified/
 
-COPY ./dist /output/
+COPY ./dist/tf2classified /output/tf2classified/
 
-FROM lacledeslan/gamesvr-tf2
+FROM lacledeslan/gamesvr-tf2classified
 
 HEALTHCHECK NONE
 
