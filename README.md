@@ -12,7 +12,7 @@ image for your customized server.
 ### Download
 
 ```shell
-docker pull lacledeslan/gamesvr-tf2-classified-freeplay;
+docker pull lacledeslan/gamesvr-tf2classified-freeplay;
 ```
 
 ### Run Self Tests
