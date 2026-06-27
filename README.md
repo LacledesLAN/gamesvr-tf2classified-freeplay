@@ -4,7 +4,7 @@
 
 This repository is maintained by [Laclede's LAN](https://lacledeslan.com). Its contents are heavily tailored and tweaked
 for use at our charity LAN-Parties. For third-parties we recommend using this repo only as a reference example and then
-building your own using [gamesvr-tf2-classified](https://github.com/LacledesLAN/gamesvr-tf2-classified) as the base
+building your own using [gamesvr-tf2classified](https://github.com/LacledesLAN/gamesvr-tf2classified) as the base
 image for your customized server.
 
 ## Linux Container
