@@ -43,13 +43,13 @@ LABEL maintainer="Laclede's LAN <contact @lacledeslan.com>" `
       org.label-schema.description="LL Team Fortress 2 Classified Dedicated Freeplay Server" `
       org.label-schema.vcs-url="https://github.com/LacledesLAN/gamesvr-tf2-freeplay"
 
-COPY --chown=TF2:root --from=content-assembler /output /app/tf2classified
+COPY --chown=TF2classified:root --from=content-assembler /output /app/tf2classified
 
 # UPDATE USERNAME & ensure permissions
-RUN usermod -l TF2CFreeplay TF2 &&`
+RUN usermod -l TF2classifiedFreeplay TF2classified &&`
     chmod +x /app/tf2classified/ll-tests/*.sh;
 
-USER TF2CFreeplay
+USER TF2classifiedFreeplay
 
 WORKDIR /app/tf2classified/
 
