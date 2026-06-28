@@ -156,6 +156,14 @@ should_lack 'Warning: failed to init SDL thread priority manager: SDL not found'
 
 # Verify server responds to commands
 should_echo "say STARTING COMMAND TESTS" 'Console: STARTING COMMAND TESTS';
+
+## Metamod:Source checks
+should_echo 'meta version' 'Metamod:Source Version Information';
+
+# SourceMod checks
+should_lack '[UPDATER] Successfully updated gamedata file' 'SourceMod not updating gamedata files';
+should_lack '[UPDATER] SourceMod has been updated, please reload it or restart your server.' 'SourceMod update prompt not present';
+should_echo 'sm version' 'SourceMod Version Information:';
 #####################################################################################################
 #####################################################################################################
 
