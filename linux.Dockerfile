@@ -17,6 +17,8 @@ RUN if [ "$contentServer" = false ] ; then \
                 mv --no-clobber *.bsp /output/tf2classified/tf2classified/maps/; \
     fi;
 
+COPY ./dist/mmsource-1.12.0-git1224-linux /output/tf2classified/tf2classified/
+
 ##SM/MM not currently compatible
 ##COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
 

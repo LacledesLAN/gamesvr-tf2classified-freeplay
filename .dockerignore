@@ -1,0 +1,16 @@
+### Project Specific ###
+
+# Metamod files
+# Ignore all unrelated/unneeded Metamod files
+dist/**/addons/metamod/README.txt
+dist/*/addons/metamod/**/metamod.2.*.so
+!dist/*/addons/metamod/**/metamod.2.hl2dm.so
+!dist/*/addons/metamod/**/metamod.2.sdk2013.so
+!dist/*/addons/metamod/**/metamod.2.tf2.so
+
+
+### General (reduce the breadth of Docker's context) ###
+.documentation/**
+.git/**
+.github/**
+.vscode/**
