@@ -23,17 +23,17 @@ COPY ./dist/mmsource-1.12.0-git1224-linux /output/tf2classified/tf2classified/
 # Sourcemod (from https://www.sourcemod.net/)
 COPY ./dist/sourcemod-1.13.0-git7379-linux /output/tf2classified/tf2classified/
 
+# Sourcemod Plugins
+COPY /dist/sourcemod-custom-plugins /output/tf2classified/tf2classified/addons/sourcemod/plugins/
 
-##SM/MM not currently compatible
-##COPY ./dist/sourcemod.linux /output/tf2classified/tf2classified/
-
-##SM/MM not currently compatible
-##COPY ./dist/sourcemod-configs /output/tf2classified/tf2classified/
-
+# Test script
 COPY ./dist/linux-x64/ll-tests /output/tf2classified/ll-tests/
 
+# Customized Game content
 COPY ./dist/tf2classified /output/tf2classified/tf2classified/
 
+
+#-------
 FROM lacledeslan/gamesvr-tf2classified
 
 HEALTHCHECK NONE
