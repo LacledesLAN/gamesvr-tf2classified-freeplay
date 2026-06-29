@@ -2,7 +2,7 @@
 
 #####################################################################################################
 ### CONFIG VARS #####################################################################################
-declare LLTEST_CMD="/app/tf2classified/srcds.sh -game tf2classified -tf_path /app/tf2 +map arena_floodgate -insecure -maxplayers 8 -norestart +sv_lan 1";
+declare LLTEST_CMD="/app/tf2c/srcds.sh -game tf2classified -tf_path /app/tf2 +map arena_floodgate -insecure -maxplayers 8 -norestart +sv_lan 1";
 declare LLTEST_NAME="gamesvr-tf2classified-freeplay-$(date '+%H%M%S')";
 #####################################################################################################
 #####################################################################################################

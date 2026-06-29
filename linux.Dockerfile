@@ -13,24 +13,25 @@ RUN if [ "$contentServer" = false ] ; then \
             echo "Decompressing files" &&\
                 bzip2 --decompress /tmp/maps/*.bz2 &&\
             echo "Moving uncompressed files to destination" &&\
-                mkdir --parents /output/tf2classified/tf2classified/maps/ &&\
-                mv --no-clobber *.bsp /output/tf2classified/tf2classified/maps/; \
+                mkdir --parents /output/tf2c/tf2classified/maps/ &&\
+                mv --no-clobber *.bsp /output/tf2c/tf2classified/maps/; \
     fi;
 
 # Metamod:Source (from https://www.metamodsource.net/)
-COPY ./dist/mmsource-1.12.0-git1224-linux /output/tf2classified/tf2classified/
+COPY ./dist/mmsource-1.12.0-git1224-linux /output/tf2c/tf2classified/
 
 # Sourcemod (from https://www.sourcemod.net/)
-COPY ./dist/sourcemod-1.13.0-git7379-linux /output/tf2classified/tf2classified/
+COPY ./dist/sourcemod-1.13.0-git7379-linux /output/tf2c/tf2classified/
 
 # Sourcemod Plugins
-COPY /dist/sourcemod-custom-plugins /output/tf2classified/tf2classified/addons/sourcemod/plugins/
+COPY /dist/sourcemod-custom-plugins /output/tf2c/tf2classified/addons/sourcemod/plugins/
 
 # Test script
 COPY ./dist/linux-x64/ll-tests /output/tf2classified/ll-tests/
 
 # Customized Game content
-COPY ./dist/tf2classified /output/tf2classified/tf2classified/
+COPY ./dist/tf2classified /output/tf2c/tf2classified/
+
 
 
 #-------
