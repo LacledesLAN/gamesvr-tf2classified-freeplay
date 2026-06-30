@@ -26,9 +26,6 @@ COPY ./dist/sourcemod-1.13.0-git7379-linux /output/tf2c/tf2classified/
 # Sourcemod Plugins
 COPY /dist/sourcemod-custom-plugins /output/tf2c/tf2classified/addons/sourcemod/plugins/
 
-# Test script
-COPY ./dist/linux-x64/ll-tests /output/tf2classified/ll-tests/
-
 # Customized Game content
 COPY ./dist/tf2classified /output/tf2c/tf2classified/
 
@@ -55,9 +52,7 @@ COPY --chown=TF2classified:root --from=content-assembler /output /app
 
 # UPDATE USERNAME & ensure permissions
 
-RUN usermod -l TF2classifiedFreeplay TF2classified &&\
-    usermod -d /app/tf2classified/ TF2classifiedFreeplay &&\
-    chmod +x /app/tf2classified/ll-tests/*.sh;
+RUN usermod -l TF2classifiedFreeplay TF2classified;
 
 USER TF2classifiedFreeplay
 

@@ -1,4 +1,7 @@
 ### Project Specific ###
+tests/logs/**
+!tests/logs/.gitkeep
+
 
 # Metamod files
 # Ignore all unrelated/unneeded Metamod files
